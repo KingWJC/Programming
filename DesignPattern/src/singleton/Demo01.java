@@ -2,7 +2,7 @@
  * @Author: KingWJC
  * @Date: 2021-04-27 11:07:38
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-04-27 17:11:33
+ * @LastEditTime: 2021-04-29 10:24:47
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\singleton\demo01.java
  * 
@@ -30,7 +30,9 @@
  *          优化性能，在类初次被加载的时候执行且仅会被执行一次。
  *          static块可以置于类中的任何地方，类中可以有多个static块
  *          会按照static块的顺序来执行每个static块，一般用来初始化静态变量和调用静态方法。
- *      3）static静态导包-不常用。
+ *      3）普通类是不允许声明为静态的，只有内部类才可以，静态内部类可以当静态方法一样直接使用，而不需要实例化外部类。
+ *          new Outer.Inner();
+ *      4）static静态导包-不常用。
  */
 
 package singleton;
