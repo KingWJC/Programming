@@ -1,26 +1,3 @@
-<!--
- * @Author: KingWJC
- * @Date: 2021-04-27 11:01:11
- * @LastEditors: KingWJC
- * @LastEditTime: 2021-04-27 17:31:54
- * @Descripttion: 
- * @FilePath: \DesignPattern\README.md
--->
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
-
 ## Design Pattern(23种)
 
 #### 单例模式
@@ -83,32 +60,31 @@ The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More detail
 
 3. 抽象工厂
 
-   1. 是对工厂模式又进行了一层抽象，不单单是像工厂模式只生成一类产品，而是一系列产品，并且可以像零件一样灵活配置给各工厂。
+   1. 是对工厂模式又进行了一层抽象，不单单是像工厂模式只生成一类产品，而是一系列产品，并且可以像零件一样灵活配置给各工厂。(产品族：两个相互影响的产品线。)
 
    2. 将工厂模式的主体类的抽象工厂方法提为一个接口，用对象合成取代了类继承。更高灵活度, 复杂度。
 
    3. 应用：
-
       常用于模板方法(控制反转)。
       抽象工厂的获取常用依赖查找和注入
       主要目的是遵循依赖倒置原则
-
+      
    4. 优点：
-
+   
       1) 分离了具体的类
       Abstract Factory 模式帮助你控制一个应用创建的对象的类。因为一个工厂封装创建产品对象的责任和过程，它将客户与类的实现分离。客户通过它们的抽象接口操纵实例。产品的类名也在具体工厂的实现中被分离；它们不出现在客户代码中。
-
+   
       2) 使得易于交换产品系列
       一个具体工厂类在一个应用中仅出现一次—即在它初始化的时候。这使得改变一个应用的具体工厂变得很容易。它只需改变具体的工厂即可使用不同的产品配置，这是因为一个抽象工厂创建了一个完整的产品系列，所以整个产品系列会立刻改变。
-
+   
       3) 有利于产品的一致性
       当一个系列中的产品对象被设计成一起工作时，一个应用一次只能使用同一个系列中的对象，这一点很重要。而AbstractFactory很容易实现这一点。
-
+   
    5. 缺点：
-
+   
       1) 难以支持新种类的产品
       难以扩展抽象工厂以生产新种类的产品，这是因为AbstractFactory接口确定了可以被创建的产品集合。 支持新种类的产品就需要扩展该工厂接口，这将涉及 AbstractFactory类及其所有子类的改变。
-
+   
 4. 保变原则：保护的变化是产品的来源。
 
 #### 建造者模式
@@ -122,5 +98,5 @@ The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More detail
 
 #### 装饰器模式
 
-#### 
+
 
