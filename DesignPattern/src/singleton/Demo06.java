@@ -1,7 +1,5 @@
 package singleton;
 
-import java.util.ArrayList;
-
 /*
  * @Author: KingWJC
  * @Date: 2021-04-27 15:28:58

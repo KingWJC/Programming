@@ -9,7 +9,7 @@
 package bridge;
 
 public class BagWallet extends Bag {
-    BagWallet(Color bc) {
+    BagWallet(Colorable bc) {
         super(bc);
     }
 

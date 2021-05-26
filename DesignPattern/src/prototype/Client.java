@@ -2,7 +2,7 @@
  * @Author: KingWJC
  * @Date: 2021-05-25 15:10:29
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-05-25 17:28:12
+ * @LastEditTime: 2021-05-26 10:29:02
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\prototype\Client.java
  */

@@ -8,7 +8,7 @@ package factorymethod.product;
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\factorymethod\product\Car.java
  */
-public class Car implements Moveable {
+public class Car implements Movable {
     private Human people;
 
     @Override

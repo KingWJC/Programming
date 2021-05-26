@@ -1,7 +1,7 @@
 package factorymethod.abstractfactory;
 
 import factorymethod.product.Human;
-import factorymethod.product.Moveable;
+import factorymethod.product.Movable;
 
 /*
  * @Author: KingWJC
@@ -18,7 +18,7 @@ public class Client {
         Human people = factory.createHuman();
         people.getColor();
         people.speak();
-        Moveable traffic = factory.createTraffic();
+        Movable traffic = factory.createTraffic();
         traffic.setDriver(people);
         traffic.go();
     }

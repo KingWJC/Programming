@@ -8,7 +8,7 @@
  */
 package bridge;
 
-public class ColorBlack extends Color {
+public class ColorBlack implements Colorable {
     public String getColor() {
         return "black";
     };

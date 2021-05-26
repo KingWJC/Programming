@@ -11,7 +11,7 @@ package factorymethod.product;
  * 语义上是行为，用接口
  * 
  */
-public interface Moveable {
+public interface Movable {
     void go();
 
     void setDriver(Human people);

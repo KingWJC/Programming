@@ -9,7 +9,7 @@
 package bridge;
 
 public class BagPack extends Bag {
-    BagPack(Color color) {
+    BagPack(Colorable color) {
         super(color);
     }
 

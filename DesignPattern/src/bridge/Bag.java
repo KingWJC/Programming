@@ -9,9 +9,9 @@
 package bridge;
 
 public abstract class Bag {
-    Color color;
+    Colorable color;
 
-    Bag(Color bc) {
+    Bag(Colorable bc) {
         color = bc;
     }
 

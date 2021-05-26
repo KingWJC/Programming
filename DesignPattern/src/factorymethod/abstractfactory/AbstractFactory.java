@@ -3,7 +3,7 @@ package factorymethod.abstractfactory;
 import factorymethod.product.BlackPeople;
 import factorymethod.product.Car;
 import factorymethod.product.Human;
-import factorymethod.product.Moveable;
+import factorymethod.product.Movable;
 import factorymethod.product.Plane;
 import factorymethod.product.WhitePeople;
 import factorymethod.product.YellowPeople;
@@ -19,7 +19,7 @@ import factorymethod.product.YellowPeople;
 public interface AbstractFactory{
     Human createHuman();
 
-    Moveable createTraffic();
+    Movable createTraffic();
 }
 
 class YelloFactory implements AbstractFactory {
@@ -29,7 +29,7 @@ class YelloFactory implements AbstractFactory {
     }
 
     @Override
-    public Moveable createTraffic() {
+    public Movable createTraffic() {
         return new Plane();
     }
 }
@@ -41,7 +41,7 @@ class BlackFactory implements AbstractFactory {
     }
 
     @Override
-    public Moveable createTraffic() {
+    public Movable createTraffic() {
         return new Car();
     }
 }
@@ -53,7 +53,7 @@ class WhiteFactory implements AbstractFactory {
     }
 
     @Override
-    public Moveable createTraffic() {
+    public Movable createTraffic() {
         return new Car();
     }
 }
