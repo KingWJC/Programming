@@ -24,6 +24,12 @@ public class ProxySubject implements Subject {
         after();
     }
 
+    @Override
+    public Subject getProxy()
+    {
+        return this;
+    }
+
     private void before()
     {
         System.out.println("before info.");

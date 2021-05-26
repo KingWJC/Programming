@@ -11,7 +11,7 @@ package proxy.normal;
 
 import java.util.Random;
 
-public class Tank implements Movable {
+public class Tank implements Movable {   
     @Override
     public void move() {
         System.out.println("move a while.");

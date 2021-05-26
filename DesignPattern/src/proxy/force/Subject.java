@@ -11,4 +11,5 @@ package proxy.force;
 
 public interface Subject {
     void request();
+    Subject getProxy();
 }

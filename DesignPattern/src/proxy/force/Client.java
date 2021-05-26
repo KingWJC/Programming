@@ -10,8 +10,12 @@ package proxy.force;
 
 public class Client {
     public static void main(String[] args) {
+        //不允许直接访问真实角色和代理角色.
         Subject realSub = new RealSubject();
         Subject proxy = new ProxySubject(realSub);
         proxy.request();
+
+        Subject forceProxy = realSub.getProxy();
+        forceProxy.request();
     }
 }

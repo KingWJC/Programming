@@ -11,10 +11,10 @@ package proxy.dynamic;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class MyHandler implements InvocationHandler {
+public class LogProxy implements InvocationHandler {
     Object obj;
 
-    MyHandler(Object obj) {
+    LogProxy(Object obj) {
         this.obj = obj;
     }
 

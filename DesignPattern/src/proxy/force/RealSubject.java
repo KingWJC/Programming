@@ -12,16 +12,22 @@ package proxy.force;
 public class RealSubject implements Subject {
     Subject proxy;
 
-    public void getProxy() {
-        this.proxy = new ProxySubject(this);
-    }
-
     @Override
     public void request() {
         if (proxy != null) {
-            proxy.request();
+            System.out.println("request info.");
         } else {
             System.out.println("no proxy.");
         }
+    }
+
+    @Override
+    public Subject getProxy()
+    {
+        if(this.proxy==null)
+        {
+            this.proxy = new ProxySubject(this);
+        }
+        return this.proxy;
     }
 }
