@@ -204,12 +204,18 @@ Java实现动态代理:
 
 #### 外观模式
 
+内，外。
+
 特点：
 
 1. 封装多个对象，并改变被包装对象的接口。
 2. 提供层更高的抽象和粒度更粗的服务，统一和简化外界对子系统的访问。
 
 #### 责任链模式
+
+#### 迭代器模式
+
+数据结构分为：物理结构(数组，链表)和逻辑结构(集合，队列)
 
 #### 命令模式
 
@@ -228,3 +234,9 @@ Java实现动态代理:
 关键：抽象出一类对象的内在的，不因环境而异的状态，封装后作为共享单元。
 
 例子：String。池化技术(线程池。连接池)
+
+https://www.processon.com/view/60012edbe401fd661aade18b?fromnew=1
+
+https://www.processon.com/view/5fe7f719f346fb16fdc2c1f8?fromnew=1
+
+https://www.processon.com/view/5f227bdde401fd181ae4436b?fromnew=1
