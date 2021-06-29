@@ -1,3 +1,11 @@
+/*
+ * @Author: KingWJC
+ * @Date: 2021-05-31 10:35:54
+ * @LastEditors: KingWJC
+ * @LastEditTime: 2021-06-29 15:11:56
+ * @Descripttion: 
+ * @FilePath: \DesignPattern\src\responsibility\servlet\FilterChain.java
+ */
 package responsibility.servlet;
 
 import java.util.ArrayList;
@@ -16,11 +24,11 @@ public class FilterChain {
         return this;
     }
 
-    public boolean doFilter(Request request, Response response ) {
+    public boolean doNextFilter(Request request, Response response) {
         if (index >= list.size())
             return false;
         Filter filter = list.get(index);
         index++;
-        return filter.doFilter(request, response,this);
+        return filter.doFilter(request, response, this);
     }
 }

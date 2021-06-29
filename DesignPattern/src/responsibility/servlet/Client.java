@@ -8,7 +8,7 @@ public class Client {
         response.message = "reponse-";
         FilterChain chain = new FilterChain();
         chain.add(new HTMLFilter()).add(new URLFilter()).add(new FaceFilter());
-        chain.doFilter(request, response);
+        chain.doNextFilter(request, response);
         System.out.println(request.message);
         System.out.println(response.message);
     }
