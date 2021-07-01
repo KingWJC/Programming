@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\visitor\Computer.java
  */
-package visitor;
+package visitor.v3;
 
 public class Computer {
     private double totalPrice;

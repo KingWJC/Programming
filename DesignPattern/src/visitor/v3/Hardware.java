@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\visitor\Hardware.java
  */
-package visitor;
+package visitor.v3;
 
 public abstract class Hardware {
     abstract double getPrice();

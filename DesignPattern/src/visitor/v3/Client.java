@@ -10,7 +10,7 @@
  * 所以可以使用访问者模式，将价格的计算抽象分离出来，容易扩展多个类型的折扣。
  * 
  */
-package visitor;
+package visitor.v3;
 
 public class Client {
     public static void main(String[] args) {

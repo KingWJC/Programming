@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\visitor\Visitor.java
  */
-package visitor;
+package visitor.v3;
 
 public interface Visitor {
     double getCpuPrice(CPU cpu);
