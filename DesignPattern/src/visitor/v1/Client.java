@@ -3,7 +3,7 @@
  * @Author: KingWJC
  * @Date: 2021-07-01 17:30:59
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-07-01 17:31:00
+ * @LastEditTime: 2021-07-02 11:07:12
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\visitor\v1\Client.java
  */
@@ -14,7 +14,7 @@ public class Client {
         File file = new PlainFile("Plain File", 100);
         File dir = new Directory("Directory");
         Visitor print = new PrinterVisitor();
-        print.visit((PlainFile)file);
-        print.visit((Directory)dir);
+        print.visit((PlainFile) file);
+        print.visit((Directory) dir);
     }
 }

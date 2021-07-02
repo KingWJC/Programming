@@ -3,9 +3,12 @@ package strategy;
  * @Author: KingWJC
  * @Date: 2021-04-28 14:47:09
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-04-28 17:40:02
+ * @LastEditTime: 2021-07-02 16:09:29
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\strategy\StraterySorter.java
+ * 
+ * V2.0：使用策略模式，抽象比较大小的方法，以达到方法的复用。
+ * 
  */
 
 import java.util.Arrays;

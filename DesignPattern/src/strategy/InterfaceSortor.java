@@ -3,9 +3,13 @@ package strategy;
  * @Author: KingWJC
  * @Date: 2021-04-28 14:46:45
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-04-28 16:08:01
+ * @LastEditTime: 2021-07-02 16:09:49
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\strategy\InterfaceSortor.java
+ * 
+ * V2.0：对实现了Comparable的对象集合，达到排序代码可以通用。
+ * 每个对象都有各自的比较大小的方式。
+ * 
  */
 
 import java.util.Arrays;

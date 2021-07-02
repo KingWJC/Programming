@@ -1,13 +1,15 @@
-package strategy;
 /*
  * @Author: KingWJC
  * @Date: 2021-04-28 14:44:30
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-04-28 15:43:55
+ * @LastEditTime: 2021-07-02 15:52:07
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\strategy\NormalSortor.java
+ * 
+ * 只能对int类型的集合进行排序，其它类型需要重新写排序方法，排序方法无法通用。
+ * 
  */
-
+package strategy;
 import java.util.Arrays;
 
 public class NormalSortor {
