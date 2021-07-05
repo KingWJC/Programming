@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\asm\ClassTransformerTest.java
  */
-package asm;
+package factorymethod.asm;
 
 import java.io.File;
 import java.io.FileOutputStream;

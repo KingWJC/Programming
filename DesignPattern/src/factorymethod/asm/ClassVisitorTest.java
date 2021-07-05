@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\asm\ClassVisitorTest.java
  */
-package asm;
+package factorymethod.asm;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;

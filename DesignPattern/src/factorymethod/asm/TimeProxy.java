@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\asm\TimeProxy.java
  */
-package asm;
+package factorymethod.asm;
 
 public class TimeProxy {
     public void before() {
