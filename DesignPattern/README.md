@@ -133,6 +133,8 @@
 2. 使用序列化
    克隆对象实现Serializable接口。先对对象进行序列化，紧接着马上反序列化。需要注意克隆对象的非基本数据类型成员也需要实现Serializable接口，否则会报错，成员无法被序列化。
 
+## 结构模式
+
 #### 桥梁模式
 
 定义：将抽象部分和实现部分分离，使它们可以独立的变化。
@@ -254,6 +256,8 @@ NET：BufferedStream，CryptoStream等式具体装饰类，为FileStream，Memor
 
 例子：String。池化技术(线程池。连接池)
 
+## 行为模式
+
 #### 责任链模式
 
 定义：使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将多个对象连成一条链，沿着这条链传递该请求，直到有一个对象处理它为止。
@@ -323,7 +327,7 @@ NET：BufferedStream，CryptoStream等式具体装饰类，为FileStream，Memor
 
 应用场景：语言编译器。将表达式解析为抽象语法树（AST Abstract Syntax Tree)。常用操作：类型检查和生成中间代码。AST的每个节点需要各种操作，放在各个节点内会不利于扩展，需要使用访问模式，将对每个节点的处理单独抽象出来，生成如typecheckVisitor, generationCodeVisitor的访问者。
 
-#### ASM
+##### ASM
 
 官网学习文档：http://asm.ow2.io
 
@@ -355,15 +359,7 @@ NET：BufferedStream，CryptoStream等式具体装饰类，为FileStream，Memor
 
 #### 观察者模式
 
-问题：小孩饿哭了，妈妈，爸爸
-
-Observer
-
-Listener
-
-Hook
-
-Callback
+Observer: Listener,Hook钩子函,Callback
 
 坦克开火事件。 
 
