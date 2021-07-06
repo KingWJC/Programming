@@ -12,8 +12,6 @@
  */
 package iterator;
 
-import composite.Node;
-
 public class LinkedListCus implements CollectionCus {
 
     // 容器第一个元素

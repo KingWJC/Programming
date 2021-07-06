@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\asm\ClassWriteTest.java
  */
-package factorymethod.asm;
+package asm;
 
 import org.objectweb.asm.ClassWriter;
 import static org.objectweb.asm.Opcodes.*;

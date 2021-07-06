@@ -6,7 +6,7 @@
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\asm\Tank.java
  */
-package factorymethod.asm;
+package asm;
 
 public class Tank {
     int i = 0;

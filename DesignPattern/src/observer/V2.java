@@ -1,9 +1,17 @@
+/*
+ * @Author: KingWJC
+ * @Date: 2021-07-06 09:34:40
+ * @LastEditors: KingWJC
+ * @LastEditTime: 2021-07-06 13:08:11
+ * @Descripttion: 
+ * @FilePath: \DesignPattern\src\observer\V2.java
+ */
 package observer;
 
 import java.util.ArrayList;
 
 /**
- * 加入多个观察者, 
+ * 使用聚集方式，加入多个观察者, 
  * 1.和被观察者藕合,直接调用观察者的方法.
  * 2.抽象观察者,分离观察者与具体被观察者
  * 

@@ -1,3 +1,11 @@
+/*
+ * @Author: KingWJC
+ * @Date: 2021-07-06 09:34:40
+ * @LastEditors: KingWJC
+ * @LastEditTime: 2021-07-06 11:22:37
+ * @Descripttion: 
+ * @FilePath: \DesignPattern\src\observer\V1.java
+ */
 package observer;
 
 /**
@@ -11,11 +19,31 @@ public class V1 {
         }
 
         Child1 child = new Child1();
+        Dad1 dad = new Dad1();
+        AI ai = new AI(child, dad);
+        ai.start();
+
         child.wakeUp();
-        while (child.isCry()) {
-            System.out.println("obserber.....");
-            Dad1 dad = new Dad1();
-            dad.feed();
+    }
+}
+
+class AI extends Thread {
+    private Child1 child;
+    private Dad1 dad;
+
+    public AI(Child1 child, Dad1 dad) {
+        this.child = child;
+        this.dad = dad;
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            if (child.isCry()) {
+                dad.feed();
+                // 重置状态
+                child.setCry(false);
+            }
         }
     }
 }
@@ -25,6 +53,10 @@ class Child1 {
 
     public boolean isCry() {
         return isCry;
+    }
+
+    public void setCry(boolean isCry) {
+        this.isCry = isCry;
     }
 
     public void wakeUp() {

@@ -3,7 +3,7 @@ package strategy;
  * @Author: KingWJC
  * @Date: 2021-04-28 14:47:09
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-07-02 16:09:29
+ * @LastEditTime: 2021-07-06 10:33:01
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\strategy\StraterySorter.java
  * 
@@ -68,7 +68,6 @@ class PeopleComparator implements Comparator<People> {
             return -1;
         return 0;
     }
-
 }
 
 class Sort04<T> {
