@@ -2,7 +2,7 @@
  * @Author: KingWJC
  * @Date: 2021-05-26 14:52:33
  * @LastEditors: KingWJC
- * @LastEditTime: 2021-05-26 15:16:04
+ * @LastEditTime: 2021-08-25 15:33:56
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\proxy\dynamic\Client.java
  * 
@@ -20,11 +20,11 @@ import java.lang.reflect.Proxy;
 
 public class Client {
     public static void main(String[] args) {
-        //输出动态生成的Proxy类.
+        // 输出动态生成的Proxy类.
         System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles", "true");
 
-        InvocationHandler handler = new LogProxy(new RealSubject());
-        Subject sub = (Subject) Proxy.newProxyInstance(Subject.class.getClassLoader(), new Class[] { Subject.class },handler);
+        InvocationHandler handler = new LogHandler(new RealSubject());
+        Subject sub = (Subject) Proxy.newProxyInstance(Subject.class.getClassLoader(), new Class[] { Subject.class }, handler);
         sub.request();
     }
 }
