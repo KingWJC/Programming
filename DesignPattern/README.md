@@ -628,3 +628,4 @@ Java提供java.util.Observer接口和Observable
 
 熟记设计模式；典型用法和类图。
 
+参考：https://github.com/kkzhilu/Kerwin-DesignPattern
