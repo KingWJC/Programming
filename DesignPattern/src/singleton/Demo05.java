@@ -7,6 +7,7 @@ package singleton;
  * @Descripttion: 
  * @FilePath: \DesignPattern\src\singleton\Demo05.java
  * 
+ * 线程安全的单例模式：既不用加锁，也能实现懒加载
  * 静态内部类方式。同样利用了classloder的机制来保证初始化instance时只有一个线程。
  * JVM保证单例：加载外部类时，不会加载内部类，只有在使用时才加载，实现懒加载。
  * 
